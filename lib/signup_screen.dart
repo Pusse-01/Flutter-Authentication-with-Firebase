@@ -131,7 +131,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         height: 24.0,
                       ),
                       RawMaterialButton(
-                        fillColor: Colors.amberAccent,
+                        fillColor: Color(0xFF4756DF),
                         child: const Text(
                           "Register",
                           style: TextStyle(
@@ -139,7 +139,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               fontWeight: FontWeight.w600,
                               fontSize: 18.0),
                         ),
-                        padding: const EdgeInsets.symmetric(vertical: 20.0),
+                        padding: const EdgeInsets.symmetric(vertical: 12.0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12.0),
                         ),
@@ -201,7 +201,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               MaterialPageRoute(
                                   builder: (context) => LoginScreen()));
                         },
-                        child: const Text('Login here'),
+                        child: const Text('Login here',
+                            style: TextStyle(
+                              color: Color(0xFF4756DF),
+                            )),
                       ),
                     ],
                   ),

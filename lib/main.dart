@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:login_signup/onboard/onboard.dart';
 import 'welcome_screen.dart';
 import 'home_screen.dart';
 import 'signup_screen.dart';
@@ -16,8 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: 'login_screen',
+      debugShowCheckedModeBanner: false,
+      initialRoute: 'onbooard',
       routes: {
+        'onbooard': (context) => OnBoard(),
         'welcome_screen': (context) => WelcomeScreen(),
         'registration_screen': (context) => RegistrationScreen(),
         'login_screen': (context) => LoginScreen(),

@@ -113,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         height: 12.0,
                       ),
                       RawMaterialButton(
-                          fillColor: Colors.amberAccent,
+                          fillColor: Color(0xFF4756DF),
                           child: const Text(
                             "Login",
                             style: TextStyle(
@@ -121,7 +121,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 fontWeight: FontWeight.w600,
                                 fontSize: 18.0),
                           ),
-                          padding: const EdgeInsets.symmetric(vertical: 20.0),
+                          padding: const EdgeInsets.symmetric(vertical: 12.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12.0),
                           ),
@@ -184,7 +184,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                         builder: (context) =>
                                             RegistrationScreen()));
                               },
-                              child: const Text('Sign Up'),
+                              child: const Text(
+                                'Sign Up',
+                                style: TextStyle(
+                                  color: Color(0xFF4756DF),
+                                ),
+                              ),
                             ),
                           ],
                         ),
